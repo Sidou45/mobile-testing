@@ -34,56 +34,183 @@
                 method="post"
                 class="flex flex-col"
             >
-                <label for="Battery" class="mb-2">Battery</label>
+                <label for="battery_power" class="mb-2">Battery</label>
                 <input
-                    type="number"
-                    name="Battery_Power"
+                    type="text"
+                    name="battery_power"
                     placeholder="Battery Power"
                     required="required"
                     class="p-4 bg-gray-100 rounded-md"
                 />
-
-                <label for="Memory" class="mb-2">Memory</label>
+               
+               <label for="blue" class="mb-2">Bluetooth</label>
                 <input
-                    type="number"
-                    name="Memory"
+                    type="text"
+                    name="blue"
+                    placeholder="Bluetooth"
+                    required="required"
+                    class="p-4 bg-gray-100 rounded-md"
+                />
+
+
+                <label for="clock_speed" class="mb-2">Clock Speed</label>
+                <input
+                    type="text"
+                    name="clock_speed"
+                    placeholder="Clock speed"
+                    required="required"
+                    class="p-4 bg-gray-100 rounded-md"
+                />
+
+                <label for="dual_sim" class="mb-2">Dual sim</label>
+                <input
+                    type="text"
+                    name="dual_sim"
+                    placeholder="Dual sim"
+                    required="required"
+                    class="p-4 bg-gray-100 rounded-md"
+                />
+
+                <label for="fc" class="mb-2">Front Camera</label>
+                <input
+                    type="text"
+                    name="fc"
+                    placeholder="Front Camera"
+                    required="required"
+                    class="p-4 bg-gray-100 rounded-md"
+                />
+
+                <label for="four_g" class="mb-2">Four G</label>
+                <input
+                    type="text"
+                    name="four_g"
+                    placeholder="Four G"
+                    required="required"
+                    class="p-4 bg-gray-100 rounded-md"
+                />
+
+                <label for="int_memory" class="mb-2">Memory</label>
+                <input
+                    type="text"
+                    name="int_memory"
                     placeholder="Memory"
                     required="required"
                     class="p-4 bg-gray-100 rounded-md"
                 />
 
-                <label for="Cores" class="mb-2">Cores</label>
+                <label for="m_dep" class="mb-2">Mobile Depth</label>
                 <input
-                    type="number"
-                    name="Cores"
+                    type="text"
+                    name="m_dep"
+                    placeholder="Mobile Depth"
+                    required="required"
+                    class="p-4 bg-gray-100 rounded-md"
+                />
+
+                <label for="mobile_wt" class="mb-2">Weight of mobile</label>
+                <input
+                    type="text"
+                    name="mobile_wt"
+                    placeholder="Weight of mobile phone"
+                    required="required"
+                    class="p-4 bg-gray-100 rounded-md"
+                />
+
+                <label for="n_cores" class="mb-2">Cores</label>
+                <input
+                    type="text"
+                    name="n_cores"
                     placeholder="Cores"
                     required="required"
                     class="p-4 bg-gray-100 rounded-md"
                 />
 
-                <label for="Height" class="mb-2">Height</label>
+                <label for="pc" class="mb-2">Primary Camera</label>
                 <input
-                    type="number"
-                    name="Height"
+                    type="text"
+                    name="pc"
+                    placeholder="Primary Camera"
+                    required="required"
+                    class="p-4 bg-gray-100 rounded-md"
+                />
+
+                <label for="px_height" class="mb-2">Height</label>
+                <input
+                    type="text"
+                    name="px_height"
                     placeholder="Height"
                     required="required"
                     class="p-4 bg-gray-100 rounded-md"
                 />
 
-                <label for="Width" class="mb-2">Width</label>
+                <label for="px_width" class="mb-2">Width</label>
                 <input
-                    type="number"
-                    name="Width"
+                    type="text"
+                    name="px_width"
                     placeholder="Width"
                     required="required"
                     class="p-4 bg-gray-100 rounded-md"
                 />
 
-                <label for="Ram" class="mb-2">Ram</label>
+                <label for="ram" class="mb-2">Ram</label>
                 <input
-                    type="number"
-                    name="Ram"
+                    type="text"
+                    name="ram"
                     placeholder="Ram"
+                    required="required"
+                    class="p-4 bg-gray-100 rounded-md"
+                />
+
+                <label for="sc_h" class="mb-2">Screen Height(cm)</label>
+                <input
+                    type="text"
+                    name="sc_h"
+                    placeholder="Screen Height"
+                    required="required"
+                    class="p-4 bg-gray-100 rounded-md"
+                />
+
+                <label for="sc_w" class="mb-2">Screen Width(cm)</label>
+                <input
+                    type="text"
+                    name="sc_w"
+                    placeholder="Screen Height"
+                    required="required"
+                    class="p-4 bg-gray-100 rounded-md"
+                />
+
+                <label for="talk_time" class="mb-2">Longest time</label>
+                <input
+                    type="text"
+                    name="talk_time"
+                    placeholder="Longest time"
+                    required="required"
+                    class="p-4 bg-gray-100 rounded-md"
+                />
+
+                <label for="three_g" class="mb-2">Three G</label>
+                <input
+                    type="text"
+                    name="three_g"
+                    placeholder="Three G"
+                    required="required"
+                    class="p-4 bg-gray-100 rounded-md"
+                />
+
+                <label for="touch_screen" class="mb-2">Touch screen</label>
+                <input
+                    type="text"
+                    name="touch_screen"
+                    placeholder="Touch screen"
+                    required="required"
+                    class="p-4 bg-gray-100 rounded-md"
+                />
+
+                <label for="wifi" class="mb-2">Wifi</label>
+                <input
+                    type="text"
+                    name="wifi"
+                    placeholder="Wifi"
                     required="required"
                     class="p-4 bg-gray-100 rounded-md"
                 />
@@ -130,12 +257,26 @@
                 <h2 class="text-5xl font-bold">{{ prediction }}</h2>
                 {% if (prediction) != '' %}
                 <div class="mt-8">
-                    <p>Battery: {{ Battery }}</p>
-                    <p>Memory: {{ Memory }}</p>
-                    <p>Cores: {{ Cores }}</p>
-                    <p>Height: {{ Height }}</p>
-                    <p>Width: {{ Width }}</p>
-                    <p>Ram: {{ Ram }}</p>
+                    <p>Battery Power: {{ battery_power }}</p>
+                    <p>Bluetooth: {{ blue }}</p>
+                    <p>Clock Speed: {{ clock_speed }}</p>
+                    <p>Dual Sim: {{ dual_sim }}</p>
+                    <p>Front Camera: {{ fc }}</p>
+                    <p>4G: {{ four_g }}</p>
+                    <p>Internal Memory: {{ int_memory }}</p>
+                    <p>Mobile Depth: {{ m_dep }}</p>
+                    <p>mobile Weight: {{ mobile_wt }}</p>
+                    <p>Core: {{ n_cores }}</p>
+                    <p>Primary Camera: {{ pc }}</p>
+                    <p>Height: {{ px_height }}</p>
+                    <p>Width: {{ px_width }}</p>
+                    <p>RAM: {{ ram }}</p>
+                    <p>Screen Height(cm): {{ sc_h }}</p>
+                    <p>Screen Width(cm): {{ sc_w }}</p>
+                    <p>Longest Time: {{ talk_time }}</p>
+                    <p>3G: {{ three_g }}</p>
+                    <p>Touch Screen: {{ touch_screen }}</p>
+                    <p>WIFI: {{ wifi }}</p>
                 </div>
                 {% endif %}
             </div>
